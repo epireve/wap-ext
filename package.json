@@ -1,0 +1,26 @@
+{
+  "name": "wa-pilot-crm",
+  "version": "0.1.0",
+  "description": "Extend Whatsapp Web with extra powerful functions for sales productivity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epireve/wap-ext.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "crm"
+  ],
+  "author": "Firdaus Adib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epireve/wap-ext/issues"
+  },
+  "homepage": "https://github.com/epireve/wap-ext#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
