@@ -1,6 +1,12 @@
 {
     "name": "WA Pilot",
     "version": "0.1",
+    "author": "Firdaus Adib",
     "description": "Extend Whatsapp Web with extra powerful functions for sales productivity",
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_scripts": [ {
+       "js": [ "js/jquery-1.9.1.min.js", "js/inject.js" ],
+       "matches": [ "https://web.whatsapp.com/*" ]
+    } ],
+    "web_accessible_resources": [ "html/options.html", "html/appendText.html", "images/favicon.png" ]
   }
