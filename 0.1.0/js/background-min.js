@@ -1,0 +1,1 @@
+chrome.browserAction.onClicked.addListener(function(o){chrome.tabs.create({url:chrome.extension.getURL("html/options.html")},function(o){})}),chrome.runtime.onMessage.addListener(function(o,e,n){for(var r in o.downloadAllImages)chrome.downloads.download({url:o.downloadAllImages[r]})});

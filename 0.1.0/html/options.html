@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!-- load javascript: jQuery 1.9.1 - http://jquery.com/ -->
+        <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+
+        <!-- load javascript: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/ -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+        <!-- load stylesheets: Bootstrap v2.3.0 - http://twitter.github.com/bootstrap/index.html -->
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"></link>
+
+        <!-- load stylesheets: internal -->
+        <link rel="stylesheet" type="text/css" href="../css/global.css"></link>
+        <link rel="stylesheet" type="text/css" href="../css/options.css"></link>
+
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <title>Settings</title>
+    </head>
+    
+    <body>
+        <header>
+            <div class="wrapper">
+                <span id="header-title"></span>
+                <span id="header-version"></span>
+
+                <a id="launch-whatsapp" href="http://web.whatsapp.com/" target="_blank"><img src="../images/favicon-whatsapp.png"> Open Whatsapp Web</a>
+            </div>
+        </header>
+
+        <div class="options wrapper">
+            <p id="app-description"></p>
+
+            <br>
+            <h2>Settings</h2>
+
+            <div style="overflow: hidden; padding-bottom: 30px">
+                <div class="options-menu">
+                    <ul>
+                        <li class="selected" data-section="options-section-general">General</li>
+                        <li data-section="options-section-custom-messages">Custom messages</li>
+                        <li id="options-menu-help" data-section="options-section-help">Help &amp; feedback</li>
+                    </ul>
+                </div>
+
+                <div class="options-content">
+                    <div id="options-section-general" class="options-section">
+                        <h4>General</h4>
+                        <hr>
+                        <div>
+                            <div class="flat-toggle on">
+                                 <span>Enable automatic emojis while typing 😁</span>
+                            </div>
+
+                            <img src="../images/automatic-emojis.gif" style="max-width: 380px; margin-left: 45px; border-radius: 6px">
+                        </div>
+                    </div>
+
+                    <div id="options-section-custom-messages" class="options-section" style="display: none">
+                        <h4>Custom messages</h4>
+                        <hr>
+                        <div>
+                            <div class="control-group">
+                                <table style="width: 100%" cellspacing="1" cellpadding="1">
+                                    <tr>
+                                        <td></td>
+                                        <td>Display title</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><input id="customTextTitle1" type="text" maxlength="30"></td>
+                                        <td><textarea id="customText1"></textarea></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td><input id="customTextTitle2" type="text" maxlength="30"></td>
+                                        <td><textarea id="customText2"></textarea></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td><input id="customTextTitle3" type="text" maxlength="30"></td>
+                                        <td><textarea id="customText3"></textarea></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td><input id="customTextTitle4" type="text" maxlength="30"></td>
+                                        <td><textarea id="customText4"></textarea></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td><input id="customTextTitle5" type="text" maxlength="30"></td>
+                                        <td><textarea id="customText5"></textarea></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button id="save-options-button" class="btn btn-success">Save settings</button>
+                            <span id="save-options-button-success"></span>
+                        </div>
+                    </div>
+
+                    <div id="options-section-help" class="options-section" style="display: none">
+                        <h4>Help & Feedback</h4>
+                        <hr>
+                        <p>Do you have any problem, comment or suggestion? Please enter the <a href="http://davidmaillo.com">author's website</a> to contact.</p>
+
+                        <p>This project has been developed by a single <a href="http://davidmaillo.com">author</a>. If you want to thank/support the project, you can donate from only <a href="https://ko-fi.com/A617JT5">buying me a coffee</a>. You will make my day! :)</p>
+                        <a href="https://ko-fi.com/A617JT5" target="_blank"><img src="https://az743702.vo.msecnd.net/cdn/kofi4.png?v=f" style="width: 140px"></a>   
+                    </div>
+                </div>
+            </div>
+
+            <!-- span id="options-donate"><img src="../images/heart.png" style="width: 16px"> Donate</span -->
+            <p style="margin-top: 150px">
+            <hr style="border-color: #CCC">
+            <small><strong>Please note:</strong> This application is NOT official and is not provided by Whatsapp Inc. It does not collect any private data and is only active on web.whatsapp.com. This application is only a basic script that inserts a new menu layer with new buttons and functionalities over the original Whatsapp Web site.</small></p>
+        </div>
+        
+        <!-- load javascript: unique html page javascript file -->
+        <script type="text/javascript" src="../js/app.js"></script>
+        <script type="text/javascript" src="../js/options.js"></script>
+    </body>
+</html>
